@@ -9,6 +9,7 @@ buildscript {
 	}
 }
 
+apply plugin: 'application'
 apply plugin: 'com.rapidminer.java-basics'
 apply plugin: 'com.rapidminer.java-publishing.agpl-v3'
 
@@ -16,6 +17,8 @@ repositories {
 	jcenter()
 	maven { url 'https://maven.rapidminer.com/content/groups/public/' }
 }
+
+mainClassName = 'GUILauncher'
 
 dependencies {
 
